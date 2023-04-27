@@ -1,40 +1,79 @@
 :root {
-  --background-color: rgb(20, 11, 11);
-  --primary: whitesmoke;
+  --background-color: #000000;
+  --primary: #db3434;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Vina Sans', cursive;
 }
 
 body {
-  background-color: var(--background-color);
-  color: var(--primary);
+  background-color:#2779a7;
+  color:#49c5b6;
+  letter-spacing: 1px;
 }
 
+
+
 header {
-  height: 20vh;
+  max-height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 header > img {
-  height: 70%;
-  width: auto;
+height: auto;
+width: 50%;
+padding-top: 2rem;
+object-fit: contain;
 }
 
+
+
 main {
-  min-height: 70vh;
+  min-height: 60vh;
+  background-color:#ECD06F;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 2rem 0;
   gap: 1rem;
 }
+
+figure {
+  height: auto;
+  width: 250px;
+  text-align: center;
+}
+
+figure > h2{
+  border-bottom: 2px solid #2779a7;
+  padding-bottom: 5px;
+}
+
+figure > img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  border: 4px solid #02b1c8;
+}
+
+button {
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  border: 2px solid #02b1c8;
+  background: transparent;
+  color: #02b1c8;
+  padding: 0.5rem 0.8rem;
+}
+
+
 
 footer {
   height: 10vh;
@@ -43,24 +82,4 @@ footer {
   align-items: center;
 }
 
-figure {
-  height: auto;
-  width: 300px;
-  text-align: center;
-}
 
-figure > img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 1rem;
-}
-
-button {
-  margin: 0 auto;
-  display: block;
-  border: 2px solid var(--primary);
-  background: transparent;
-  color: var(--primary);
-  padding: 0.5rem 0.8rem;
-}
